@@ -1,0 +1,3 @@
+subdirs = [
+        "device/1.0",
+]
