@@ -62,4 +62,9 @@ interface ISupplicantVendorStaNetwork extends ISupplicantStaNetwork {
    *         |SupplicantStatusCode.FAILURE_NETWORK_INVALID|
    */
   setEapErp(bool enable) generates (SupplicantStatus status);
+
+  /**
+   * Configure Sim number for eap-proxy
+   */
+  setSimNumber(uint32_t sim_num) generates (SupplicantStatus status);
 };
