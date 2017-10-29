@@ -49,7 +49,6 @@ cc_library_shared {
         "liblog",
         "libutils",
         "libcutils",
-        "android.hidl.base@1.0",
         "vendor.display.config@1.0",
     ],
     export_shared_lib_headers: [
@@ -57,7 +56,6 @@ cc_library_shared {
         "libhidltransport",
         "libhwbinder",
         "libutils",
-        "android.hidl.base@1.0",
         "vendor.display.config@1.0",
     ],
 }
@@ -76,7 +74,6 @@ cc_library_shared {
         "liblog",
         "libutils",
         "libcutils",
-        "android.hidl.base@1.0",
         "vendor.display.config@1.0_vendor",
     ],
     export_shared_lib_headers: [
@@ -84,7 +81,6 @@ cc_library_shared {
         "libhidltransport",
         "libhwbinder",
         "libutils",
-        "android.hidl.base@1.0",
         "vendor.display.config@1.0_vendor",
     ],
 }
