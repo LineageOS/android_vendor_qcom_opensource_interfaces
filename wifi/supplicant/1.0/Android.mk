@@ -92,7 +92,6 @@ intermediates := $(call local-generated-sources-dir, COMMON)
 HIDL := $(HOST_OUT_EXECUTABLES)/hidl-gen$(HOST_EXECUTABLE_SUFFIX)
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-    android.hardware.wifi.supplicant-V1.0-java-static \
     android.hidl.base-V1.0-java-static \
 
 
