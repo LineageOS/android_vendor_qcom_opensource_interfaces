@@ -3,6 +3,11 @@ hidl_package_root {
     path: "vendor/qcom/opensource/interfaces/display",
 }
 
+hidl_package_root {
+    name: "vendor.display",
+    path: "vendor/qcom/opensource/interfaces/display",
+}
+
 subdirs = [
     "*",
 ]
