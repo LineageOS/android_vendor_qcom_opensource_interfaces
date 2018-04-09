@@ -2,7 +2,6 @@
 
 hidl_interface {
     name: "vendor.display.config@1.1",
-    owner: "qti",
     root: "vendor.display",
     srcs: [
         "IDisplayConfig.hal",

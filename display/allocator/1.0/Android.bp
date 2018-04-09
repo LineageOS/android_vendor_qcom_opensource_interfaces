@@ -11,6 +11,7 @@ hidl_interface {
         "android.hardware.graphics.common@1.0",
         "android.hardware.graphics.mapper@2.0",
         "android.hidl.base@1.0",
+        "vendor.qti.hardware.display.mapper@1.0",
     ],
     gen_java: false,
 }
