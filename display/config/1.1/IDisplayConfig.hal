@@ -37,7 +37,7 @@ interface IDisplayConfig extends @1.0::IDisplayConfig {
   *
   * @return one of the hwc2 errors
   */
-  @callflow(next="*")
+  @callflow(next={"*"})
   setDisplayAnimating(uint64_t displayId, bool animating) generates (int32_t error);
 };
 
