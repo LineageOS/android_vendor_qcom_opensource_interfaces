@@ -34,6 +34,14 @@ import android.hardware.wifi.supplicant@1.0::types;
 /* Vendor P2P Iface Callback interface */
 
 interface ISupplicantVendorP2PIfaceCallback {
+
+  /* Possible set of values for Information Element Type */
+
+   enum InfoElementType :uint8_t {
+        WSC_VENDOR,
+        MIRRORLINK
+   };
+
   /**
    * Used to indicate that a P2P device has been found.
    *
@@ -58,5 +66,13 @@ interface ISupplicantVendorP2PIfaceCallback {
       bitfield<WpsConfigMethods> configMethods, uint8_t deviceCapabilities,
       bitfield<P2pGroupCapabilityMask> groupCapabilities, uint8_t[6] wfdDeviceInfo,uint8_t[2] wfdR2DeviceInfo);
 
+  /**
+   * Used to indicate that a P2P device with some addition IEs has been found.
+   *
+   * @param info Vendor Extension Info as described in Section 12 of WSC
+   *        specification version 2.0.4
+   * @param type Vendor Extension Attribute for identification
+   *
+   */
+  oneway onVendorExtensionFound(vec<uint8_t> info, bitfield<InfoElementType> type);
 };
-

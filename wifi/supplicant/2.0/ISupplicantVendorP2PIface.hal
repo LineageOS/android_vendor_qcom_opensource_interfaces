@@ -32,15 +32,35 @@ package vendor.qti.hardware.wifi.supplicant@2.0;
 
 import vendor.qti.hardware.wifi.supplicant@2.0::ISupplicantVendorIface;
 import android.hardware.wifi.supplicant@1.0::types;
+import vendor.qti.hardware.wifi.supplicant@2.0::ISupplicantVendorP2PIfaceCallback;
 
 /* Vendor P2PIface HAL interface*/
 
 interface ISupplicantVendorP2PIface extends @2.0::ISupplicantVendorIface{
 
+  /**
+   * Register for P2P vendorcallbacks from this interface.
+   *
+   * These callbacks are invoked for events that are specific to this interface.
+   * Registration of multiple vendor callback objects is supported. These objects
+   * must be automatically deleted when the corresponding client process is dead or
+   * if this interface is removed.
+   *
+   * @param callback An instance of the |ISupplicantVendorP2PIfaceCallback| HIDL
+   *        interface object.
+   * @return status Status of the operation.
+   *         Possible status codes:
+   *         |SupplicantStatusCode.SUCCESS|,
+   *         |SupplicantStatusCode.FAILURE_UNKNOWN|,
+   *         |SupplicantStatusCode.FAILURE_IFACE_INVALID|
+   */
+  registerVendorCallback(ISupplicantVendorP2PIfaceCallback callback)
+      generates (SupplicantStatus status);
+
 /*
    * Set Wifi Display device info.
    *
-   * @param info WFDR2 device info as described in section TODO of WFD technical
+   * @param info WFDR2 device info as described in section 5.1.12 of WFD technical
    *        specification v2.0.0.
    * @return status Status of the operation.
    *         Possible status codes:
@@ -50,4 +70,17 @@ interface ISupplicantVendorP2PIface extends @2.0::ISupplicantVendorIface{
    */
   setWfdR2DeviceInfo(uint8_t[4] info) generates (SupplicantStatus status);
 
+/*
+   * Set Vendor extension attributes in WSC IE
+   *
+   * @param info WFDR2 device info as described in section 12 of WSC technical
+   *        specification v2.0.4
+   * @return status Status of the operation.
+   *         Possible status codes:
+   *         |SupplicantStatusCode.SUCCESS|,
+   *         |SupplicantStatusCode.FAILURE_UNKNOWN|,
+   *         |SupplicantStatusCode.FAILURE_IFACE_INVALID|
+   */
+  setVendorInfoElement(vec<uint8_t> ie, bitfield<InfoElementType> type)
+                generates (SupplicantStatus status);
 };
