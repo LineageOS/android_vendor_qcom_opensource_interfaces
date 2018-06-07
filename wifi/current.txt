@@ -27,9 +27,28 @@
 #
 #
 
-#HAL released in Android O
+######HAL released in Android O######
 
-#HAL released in Android O-MR1
+##wpa_supplicant
+44f64089ee7da809dd0b7a7091a77563f4042918f5a72fbf2adf0913f739d87f vendor.qti.hardware.wifi.supplicant@1.0::ISupplicantVendorStaIface
+cae461dd9fd96e1fadd08173fe0d741c1634c48f54dabf50b2a80e2f7f611ab4 vendor.qti.hardware.wifi.supplicant@1.0::ISupplicantVendorStaIfaceCallback
+8015ba1e1e5b6951d6b2ed2a248799d9867aaacd424c2a00287a3c9ee47a34d6 vendor.qti.hardware.wifi.supplicant@1.0::ISupplicantVendorStaNetwork
 
-#HAL released in Android P
+######HAL released in Android O-MR1######
 
+
+######HAL released in Android P######
+
+##wpa_supplicant
+5e543f94a97fcdc8406bb79ef218c974fa516955bd3f452b4bff2e13b973b4a5 vendor.qti.hardware.wifi.supplicant@2.0::ISupplicantVendor
+776150216bea5f183011d579a615cace1341500d64bb5b4f0e56fc4989143cc4 vendor.qti.hardware.wifi.supplicant@2.0::ISupplicantVendorIface
+5d4b3e28c162cd760d4482d520d33b6a3f2137c6e82ed7ff27ec98b25052545e vendor.qti.hardware.wifi.supplicant@2.0::ISupplicantVendorNetwork
+a407fedd34b5aeac6fa6bc8442e57c9528f197d3de20e81be508fb2f17dc4295 vendor.qti.hardware.wifi.supplicant@2.0::ISupplicantVendorP2PIface
+c5a4055a1f0a53f34fbdcbfb732670f1e7444581bc6a4fe0dcccdf8b0c2f2329 vendor.qti.hardware.wifi.supplicant@2.0::ISupplicantVendorP2PIfaceCallback
+045f0c1733d336287fe7f833a77a5e52a4c14fb46aa4a911df643bd1d5422533 vendor.qti.hardware.wifi.supplicant@2.0::ISupplicantVendorStaIface
+29696c53249ce1ef8510f7d8fb4919ab07df138f1f909844b4cf3009eb2741cc vendor.qti.hardware.wifi.supplicant@2.0::ISupplicantVendorStaIfaceCallback
+26b24a10f174cd9c18cb75e20308f75bc3e39f847c1342ebd2911c47e8fc5d87 vendor.qti.hardware.wifi.supplicant@2.0::ISupplicantVendorStaNetwork
+
+##hostapd
+50ef4bcbaeb679dccc87871862ee6ebd1308f7e387b36920a597d9e5207241bd vendor.qti.hardware.wifi.hostapd@1.0::IHostapdVendor
+db279e0c0c0fef0cc475780c164397d95aa873385ae2a5ac3cfa61dadfb8ccc7 vendor.qti.hardware.wifi.hostapd@1.0::IHostapdVendorIfaceCallback
