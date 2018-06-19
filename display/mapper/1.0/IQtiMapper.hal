@@ -29,7 +29,7 @@
 
 package vendor.qti.hardware.display.mapper@1.0;
 
-import android.hardware.graphics.mapper@2.0;
+import android.hardware.graphics.mapper@2.1;
 
 interface IQtiMapper extends IMapper {
 
@@ -88,5 +88,13 @@ interface IQtiMapper extends IMapper {
      */
     @callflow(next="*")
     setSingleBufferMode(pointer buffer, bool enable) generates (Error error);
+
+    /*
+     * Get custom format and private handle flags for a given combination of
+     * format and usage flags.
+    */
+    @callflow(next="*")
+    getCustomFormatFlags(int32_t format, uint64_t usage)
+    generates (Error error, int32_t format, uint64_t priv_flags);
 };
 
