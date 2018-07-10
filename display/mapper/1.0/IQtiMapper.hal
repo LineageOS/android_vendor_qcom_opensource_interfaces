@@ -30,6 +30,7 @@
 package vendor.qti.hardware.display.mapper@1.0;
 
 import android.hardware.graphics.mapper@2.1;
+import android.hardware.graphics.mapper@2.0::types;
 
 interface IQtiMapper extends IMapper {
 
