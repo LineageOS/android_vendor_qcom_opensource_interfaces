@@ -30,7 +30,6 @@
 package vendor.display.config@1.7;
 
 import @1.6::IDisplayConfig;
-import @1.2::IDisplayConfig;
 
 interface IDisplayConfig extends @1.6::IDisplayConfig {
     enum PowerMode : int32_t {
@@ -43,51 +42,51 @@ interface IDisplayConfig extends @1.6::IDisplayConfig {
     /*
      * Sets new power mode on the specificied display.
      *
-     * @param disp_type display type
+     * @param disp_id display identifier used between client & service
      * @param power_mode new power mode
      * @return error is NONE upon success
      */
     @callflow(next="*")
-    setPowerMode(DisplayTypeExt disp_type, PowerMode power_mode) generates (int32_t error);
+    setPowerMode(uint32_t disp_id, PowerMode power_mode) generates (int32_t error);
 
     /*
      * Query if power mode override is supported by underlying implementation
      * for the specified display.
      *
-     * @param disp_type display type
+     * @param disp_id display identifier used between client & service
      * @return supported true if supported
      */
     @callflow(next="*")
-    isPowerModeOverrideSupported(DisplayTypeExt disp_type) generates (bool supported);
+    isPowerModeOverrideSupported(uint32_t disp_id) generates (bool supported);
 
     /*
      * Query if hdr is supported by the underlying implementation for the specified display.
      *
-     * @param disp_type display type
+     * @param disp_id display identifier used between client & service
      * @return supported true if supported
      */
     @callflow(next="*")
-    isHDRSupported(DisplayTypeExt disp_type) generates (bool supported);
+    isHDRSupported(uint32_t disp_id) generates (bool supported);
 
     /*
      * Query if wide color gamut is supported by the underlying implementation
      * for the specified display.
      *
-     * @param disp_type display type
+     * @param disp_id display identifier used between client & service
      * @return supported true if supported
      */
     @callflow(next="*")
-    isWCGSupported(DisplayTypeExt disp_type) generates (bool supported);
+    isWCGSupported(uint32_t disp_id) generates (bool supported);
 
     /*
      * Sets layer as a mask type (e.g. round corner) identified by the layer id.
      *
-     * @param disp_type display type
+     * @param disp_id display identifier used between client & service
      * @param layer_id layer id used for communication with hwc
      * @return error is NONE upon success
      */
     @callflow(next="*")
-    setLayerAsMask(DisplayTypeExt disp_type, uint64_t layer_id) generates (int32_t error);
+    setLayerAsMask(uint32_t disp_id, uint64_t layer_id) generates (int32_t error);
 
     /*
      * Gets value corresponding to the specified property string from hwc.
