@@ -45,3 +45,113 @@ struct YCbCrLayout {
     uint32_t cStride;
     uint32_t chromaStep;
 };
+
+/**
+ * Plane Component type definitions.
+ */
+enum PlaneComponent : uint32_t {
+     /* luma */
+     PLANE_COMPONENT_Y = 1 << 0,
+     /* chroma blue */
+     PLANE_COMPONENT_Cb = 1 << 1,
+     /* chroma red */
+     PLANE_COMPONENT_Cr = 1 << 2,
+
+     /* red */
+     PLANE_COMPONENT_R = 1 << 10,
+     /* green */
+     PLANE_COMPONENT_G = 1 << 11,
+     /* blue */
+     PLANE_COMPONENT_B = 1 << 12,
+
+     /* alpha */
+     PLANE_COMPONENT_A = 1 << 20,
+
+     /* raw data plane */
+     PLANE_COMPONENT_RAW = 1 << 30,
+
+     /* meta information plane */
+     PLANE_COMPONENT_META = 1 << 31,
+};
+
+/**
+ * Flags to send with getFormatLayout for extra information for e.g. interlaced,
+ * otherwise send 0.
+ */
+enum Flags : int32_t {
+     /* flag to send for interlace */
+     LAYOUT_INTERLACED_FLAG = 1 << 0,
+};
+
+/**
+ * Structure for describing plane layout information for YUVA/RGBA/RAW formats
+ * YUV formats can be planar or semi-planar.
+ *
+ * This layout structure is used with any pixel format that can be
+ * represented by it, such as:
+ *  - HAL_PIXEL_FORMAT_YCbCr_*
+ *  - HAL_PIXEL_FORMAT_RGB*_*
+ *  - even implementation defined formats that can be represented by
+ *    the structures
+ *
+ * Each plane can be made up of one or more PlaneComponents depending on
+ * the format.
+ *
+ * Each plane can be subsampled either vertically or horizontally by
+ * a power-of-two factor.
+ *
+ * Pixel increment describes the distance in bytes from one pixel to the
+ * next pixel (to the right) on the same row for the component plane.
+ * This can be negative.
+ *
+ * Stride is provided in both pixels and bytes.
+ * Stride_bytes describes the distance in bytes from the first pixel of
+ * one row to the first pixel of the next row (below) for the component plane.
+ * This can be negative.
+ *
+ * Scanlines describes the height of the plane in terms of number of rows.
+ *
+ * Size of plane is stride_bytes * scanlines + any padding required for
+ * alignment as per format specification.
+ *
+ */
+struct PlaneLayout {
+
+     /** Fields below provide the plane layout requirements.
+      *  Values of these fields are specific to the format being
+      *  described and are fixed. They do not depend on actual image
+      *  width and height.
+      */
+     /** Components represented by the plane. */
+     bitfield<PlaneComponent> component;
+
+     /** horizontal subsampling. Must be a positive power of 2. */
+     uint32_t h_subsampling;
+
+     /** vertical subsampling. Must be a positive power of 2. */
+     uint32_t v_subsampling;
+
+     /** offset to the first byte of the top-left pixel of the plane
+      *  and it is calculated from the start of the buffer.
+      *  Add base of the handle with offset to get the first byte of the plane.
+      */
+     uint32_t offset;
+
+     /** pixel increment */
+     int32_t pixel_increment;
+
+     /** Fields below will have values that are calcuated based
+      *  on provided image width and height.
+      */
+     /** row width or horizontal stride in pixels */
+     int32_t stride;
+
+     /** row width or horzontal stride in bytes */
+     int32_t stride_bytes;
+
+     /** plane height or vertical stride */
+     int32_t scanlines;
+
+     /** Size of the plane in bytes */
+     uint32_t size;
+};
