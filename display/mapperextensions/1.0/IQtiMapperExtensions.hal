@@ -171,5 +171,19 @@ interface IQtiMapperExtensions {
     @callflow(next="*")
     getSurfaceMetadata(pointer buffer) generates (Error error, pointer metadata);
 
+    /* Get per plane layout information for given format, gralloc usage, width and height
+     * Returns a vector of PlaneLayout whose size depends on the format
+     *  For RGB & RAW formats size is 1
+     *  For YUV semiplanar size :
+     *   - progressive & compressed size is 4 including meta plane
+     *   - progressive & linear size is 2
+     *  For YUV semiplanar interlaced compressed size is 8 including meta plane
+     *  For YUV planar size is 3
+     * Output parameter "size" is representing the total size of the buffer.
+     */
+    @callflow(next="*")
+    getFormatLayout(int32_t format, uint64_t usage, int32_t flags, int32_t width, int32_t height)
+    generates (Error error, uint64_t size, vec<PlaneLayout> plane_info);
+
 };
 
