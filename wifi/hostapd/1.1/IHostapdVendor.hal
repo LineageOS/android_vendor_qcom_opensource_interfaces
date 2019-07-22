@@ -55,6 +55,15 @@ interface IHostapdVendor extends @1.0::IHostapdVendor {
       ERROR = 5
     };
 
+    /** Possble Security types. */
+    enum VendorEncryptionType : uint32_t {
+        NONE,
+        WPA,
+        WPA2,
+        SAE,
+        OWE
+    };
+
     /**
      * Set debug parameters for the hostapd.
      *
@@ -121,6 +130,10 @@ interface IHostapdVendor extends @1.0::IHostapdVendor {
         @1.0::IHostapdVendor.VendorIfaceParams VendorV1_0;
         /** Additional Channel params for the interface */
         VendorChannelParams vendorChannelParams;
+        /** Key management mask for the network. overrides NetworkParams.encryptionType */
+        VendorEncryptionType vendorEncryptionType;
+        /** Iface name for OWE transition mode  */
+        string oweTransIfaceName;
     };
 
     /**

@@ -52,3 +52,10 @@ c5a4055a1f0a53f34fbdcbfb732670f1e7444581bc6a4fe0dcccdf8b0c2f2329 vendor.qti.hard
 ##hostapd
 50ef4bcbaeb679dccc87871862ee6ebd1308f7e387b36920a597d9e5207241bd vendor.qti.hardware.wifi.hostapd@1.0::IHostapdVendor
 db279e0c0c0fef0cc475780c164397d95aa873385ae2a5ac3cfa61dadfb8ccc7 vendor.qti.hardware.wifi.hostapd@1.0::IHostapdVendorIfaceCallback
+
+
+######HAL released in Android Q######
+
+##hostapd
+dc94b24d2b88da954eeb718dd72a4efb82d7399f5ffb9c2c5b5ea6b2e7843d83 vendor.qti.hardware.wifi.hostapd@1.1::IHostapdVendor
+c3f75d8b9d47c8d5083b29fa1838cd2d6c655dbfc1433cc3cee98aad0f9729dc vendor.qti.hardware.wifi.hostapd@1.1::IHostapdVendorIfaceCallback
