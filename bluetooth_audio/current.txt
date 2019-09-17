@@ -1,4 +1,4 @@
-#Copyright (c) 2019, The Linux Foundation. All rights reserved.
+#Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
 
 #Redistribution and use in source and binary forms, with or without
 #modification, are permitted provided that the following conditions are
@@ -35,3 +35,7 @@ ef6d3c9fa95928e3d4c54d170907c7543f729979a12b171e1fd9031e611d92b5 vendor.qti.hard
 f511d8a5b66a9162a20cbe358b67b62e3c7de2ed0fecba3c48e16ad9f27f7863 vendor.qti.hardware.bluetooth_audio@2.1::IBluetoothAudioPort
 c652f3eab8fa0d02abfd78dfb102b4387b1187a57406d09703e6494ef3ee75ca vendor.qti.hardware.bluetooth_audio@2.1::IBluetoothAudioProvider
 cf19a95e4c72570fca8962f0df9c9334178c701951f681f6afa6fb441edf83fd vendor.qti.hardware.bluetooth_audio@2.1::IBluetoothAudioProvidersFactory
+
+b8a78ed33232d41556057f0a86db982e478f9b7e949c480bcbe9c9124e5d827c com.qualcomm.qti.bluetooth_audio@1.0types
+6e3f69f0ee228a5e5d889420efd03f6d662a9b78e85f6aae912bdad44beadd77 com.qualcomm.qti.bluetooth_audio@1.0::IBluetoothAudio
+c49c68683522b0b375bcb698666854ffdbb605ae69958ce30bc4036000e7bff9 com.qualcomm.qti.bluetooth_audio@1.0::IBluetoothAudioCallbacks
