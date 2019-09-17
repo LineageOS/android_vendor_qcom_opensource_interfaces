@@ -69,3 +69,8 @@ hidl_package_root {
     name:"vendor.qti.hardware.umd",
     path:"vendor/qcom/opensource/interfaces/umd"
 }
+
+hidl_package_root {
+    name: "com.qualcomm.qti.bluetooth_audio",
+    path: "vendor/qcom/opensource/interfaces/bluetooth_audio",
+}
