@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b52a730d_80b4c91b",
+        "filename": "cryptfshw/1.0/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 24027
+      },
+      "writtenOn": "2019-09-30T23:31:27Z",
+      "side": 1,
+      "message": "What if I have it both in /system/product and /vendor on stock\nfind -name vendor.qti.hardware.cryptfshw@1.0.so\n./vendor/lib64/vendor.qti.hardware.cryptfshw@1.0.so\n./vendor/lib/vendor.qti.hardware.cryptfshw@1.0.so\n./system/system/product/lib64/vendor.qti.hardware.cryptfshw@1.0.so\n./system/system/product/lib/vendor.qti.hardware.cryptfshw@1.0.so",
+      "revId": "0629f6ddaaebb0055e8f0fb727044c7f5b4270f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
