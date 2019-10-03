@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2c7021bf_78ca3f87",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2019-10-03T13:36:07Z",
+      "side": 1,
+      "message": "Duplicate?",
+      "range": {
+        "startLine": 35,
+        "startChar": 11,
+        "endLine": 35,
+        "endChar": 46
+      },
+      "revId": "0aa2cad79aecb72372083cbac8cf7427ea75078f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "31bebb47_83020ebd",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2019-10-03T13:36:07Z",
+      "side": 1,
+      "message": "Alphabetical order",
+      "revId": "0aa2cad79aecb72372083cbac8cf7427ea75078f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f63f9196_5415a84d",
+        "filename": "bluetooth_audio/1.0/IBluetoothAudioCallbacks.hal",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2019-10-03T13:36:07Z",
+      "side": 1,
+      "message": "Extra newline",
+      "revId": "0aa2cad79aecb72372083cbac8cf7427ea75078f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
