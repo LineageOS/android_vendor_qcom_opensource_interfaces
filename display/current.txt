@@ -49,6 +49,7 @@ f78bba2991501438ad9ca1a0812f6a2a3991cb178bec4c00bd8eec841777d8d9 vendor.display.
 50369a070405a1f0cac44648f39ca32864c1339896d6eb16524b32fff9e95f03 vendor.display.config@1.10::IDisplayCWBCallback
 10a290fc22df7680d00c53370870d5e941b7d60afcb94e90d2dd03369e7ccebc vendor.display.config@1.11::IDisplayConfig
 ec808064f9829b3c124edf70042b651aac29ec0c3ebc842626c42da4a327ff2c vendor.display.config@1.12::IDisplayConfig
+c3ee03cf51ea11b6093a67d78be71085f1b5208e4ffbdbced1013c02246edc96 vendor.display.config@1.13::IDisplayConfig
 
 #HAL released in Android Q
 72889f3c7812efb6e00cd59d17dca3ee392b029eef83622758d206e1e835722c vendor.qti.hardware.display.mapper@3.0::IQtiMapper
