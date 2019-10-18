@@ -32,3 +32,5 @@
 f054d56cfb47d897f64f71ef4fcacb5ddb1d9c2841e1a83e93efbf92ca1d1297 vendor.qti.hardware.servicetracker@1.0::types
 bba735f959d5c7a36196de6548a5f74090512bc4e9d92ac29279b2dd786ebb8a vendor.qti.hardware.servicetracker@1.0::IServicetracker
 
+######HAL released in Android Q######
+e1112e99ed844f2e3d9d653acc818391dc0470b810704f59928b021a11eca675 vendor.qti.hardware.servicetracker@1.1::IServicetracker
