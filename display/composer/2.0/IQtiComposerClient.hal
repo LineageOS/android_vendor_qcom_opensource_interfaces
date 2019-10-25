@@ -33,5 +33,26 @@ import android.hardware.graphics.composer@2.3::IComposerClient;
 
 interface IQtiComposerClient extends IComposerClient {
 
+    enum LayerType : uint32_t {
+        UNKNOWN = 0,
+        APP = 1,
+        GAME = 2,
+        BROWSER = 3,
+    };
+
+    /**
+      * SET_LAYER_TYPE has this pseudo prototype
+      * setLayerType(uint32_t type);
+      *
+      * param type is the layer type.
+      *            0 - Unknown
+      *            1 - APP
+      *            2 - Game
+      *            3 - Browser
+      */
+    enum Command : @2.3::IComposerClient.Command {
+        SET_LAYER_TYPE = 0x800 << @2.3::IComposerClient.Command:OPCODE_SHIFT,
+    };
+
 };
 
