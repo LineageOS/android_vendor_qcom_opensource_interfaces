@@ -50,6 +50,7 @@ f78bba2991501438ad9ca1a0812f6a2a3991cb178bec4c00bd8eec841777d8d9 vendor.display.
 10a290fc22df7680d00c53370870d5e941b7d60afcb94e90d2dd03369e7ccebc vendor.display.config@1.11::IDisplayConfig
 ec808064f9829b3c124edf70042b651aac29ec0c3ebc842626c42da4a327ff2c vendor.display.config@1.12::IDisplayConfig
 c3ee03cf51ea11b6093a67d78be71085f1b5208e4ffbdbced1013c02246edc96 vendor.display.config@1.13::IDisplayConfig
+fe3a84ee6c6231badb64b5331813fd29aa8df5146113cca0490255102a15a1be vendor.display.config@1.14::IDisplayConfig
 
 #HAL released in Android Q
 72889f3c7812efb6e00cd59d17dca3ee392b029eef83622758d206e1e835722c vendor.qti.hardware.display.mapper@3.0::IQtiMapper
@@ -57,4 +58,6 @@ c3ee03cf51ea11b6093a67d78be71085f1b5208e4ffbdbced1013c02246edc96 vendor.display.
 9e960ad971bfeb1ccc3102caf0a2d94e95457a1ff9ff0c72156faa94f2500c5d vendor.qti.hardware.display.mapperextensions@1.1::IQtiMapperExtensions
 b750c6dd2233e7d102f0a4f3d5124e358d134b80dfc86066d84e6f0722615881 vendor.qti.hardware.display.mapperextensions@1.0::types
 13eca267916c940ad44e08ee5e43e22bb24fa6afe7f2b824ea9d6c753d17e1d9 vendor.qti.hardware.display.mapperextensions@1.0::IQtiMapperExtensions
+cc81da1cfc8f045fa4183a7ab2f5f34cb863b310b8d04bf7db661a58ec9ea5c3 vendor.display.config@1.15::IDisplayConfig
+be4de6eea1098375e80d26bd86d0e239a3d739ec7dfa43b1b2fa5e6f75c86966 vendor.display.config@1.15::IDisplayQsyncCallback
 
