@@ -1,4 +1,4 @@
-# Copyright (c) 2019, The Linux Foundation. All rights reserved.
+# Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -34,3 +34,8 @@ bba735f959d5c7a36196de6548a5f74090512bc4e9d92ac29279b2dd786ebb8a vendor.qti.hard
 
 ######HAL released in Android Q######
 e1112e99ed844f2e3d9d653acc818391dc0470b810704f59928b021a11eca675 vendor.qti.hardware.servicetracker@1.1::IServicetracker
+
+######HAL released in Android R######
+b21a4655232991b5121fc0c86522bdb76f8d519540deac62c85de5b7315a3e55 vendor.qti.hardware.servicetracker@1.2::types
+75c7c3e72c2efa195b743d1395dd3ea6ef96761a8503392f945d2f691ea0d2d0 vendor.qti.hardware.servicetracker@1.2::IActivityEventInfoCallback
+dc8389391ce48795d11717f6973f8e92a1f660fd6d5bc60e5de8ae19c1d16103 vendor.qti.hardware.servicetracker@1.2::IServicetracker
