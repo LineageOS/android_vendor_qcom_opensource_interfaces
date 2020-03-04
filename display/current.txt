@@ -1,4 +1,4 @@
-#Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+#Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
 
 #Redistribution and use in source and binary forms, with or without
 #modification, are permitted provided that the following conditions are
@@ -64,4 +64,5 @@ cc81da1cfc8f045fa4183a7ab2f5f34cb863b310b8d04bf7db661a58ec9ea5c3 vendor.display.
 be4de6eea1098375e80d26bd86d0e239a3d739ec7dfa43b1b2fa5e6f75c86966 vendor.display.config@1.15::IDisplayQsyncCallback
 5862c0c085c9e0b6d8b8a11e4a9765a6a9250874d7c1a9b0f6b566598da31593 vendor.display.config@2.0::IDisplayConfig
 14fcf170f04a9878bf085b2aa4d75ef5e3d241926bef18e58d6d254e000ff689 vendor.display.config@2.0::IDisplayConfigCallback
+ada1c82f1ba85c9f403c4b91d24ebc6dfc2e796a7727bcca23f4e2ea68800f35 vendor.display.config@1.16::IDisplayConfig
 
