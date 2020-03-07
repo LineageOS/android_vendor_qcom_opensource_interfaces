@@ -1,0 +1,6 @@
+package vendor.qti.hardware.bluetooth_sar@1.0;
+
+interface IBluetoothSar {
+    oneway setBluetoothTxPowerCap(int8_t cap);
+};
+
