@@ -27,31 +27,20 @@
 * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-package vendor.qti.hardware.display.composer@2.0;
+package vendor.qti.hardware.display.composer@2.1;
 
-import android.hardware.graphics.composer@2.3::IComposerClient;
+import @2.0::IQtiComposerClient;
 
-interface IQtiComposerClient extends IComposerClient {
+interface IQtiComposerClient extends @2.0::IQtiComposerClient {
 
-    enum LayerType : uint32_t {
-        UNKNOWN = 0,
-        APP = 1,
-        GAME = 2,
-        BROWSER = 3,
-    };
-
-    /**
-      * SET_LAYER_TYPE has this pseudo prototype
-      * setLayerType(uint32_t type);
-      *
-      * param type is the layer type.
-      *            0 - Unknown
-      *            1 - APP
-      *            2 - Game
-      *            3 - Browser
-      */
-    enum Command : @2.3::IComposerClient.Command {
-        SET_LAYER_TYPE = 0x800 << @2.3::IComposerClient.Command:OPCODE_SHIFT,
+    enum Command : @2.0::IQtiComposerClient.Command {
+        /**
+          * SET_DISPLAY_ELAPSE_TIME has this pseudo prototype
+          * setDisplayElapseTime(s64 time);
+          *
+          * param type is of int64_t which specifies system time in ns.
+          */
+        SET_DISPLAY_ELAPSE_TIME = 0x801 << @2.0::IQtiComposerClient.Command:OPCODE_SHIFT,
     };
 
 };
