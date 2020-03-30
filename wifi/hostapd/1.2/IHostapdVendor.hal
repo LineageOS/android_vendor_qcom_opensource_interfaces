@@ -1,0 +1,104 @@
+/* Copyright (c) 2020, The Linux Foundation. All rights reserved.
+*
+* Redistribution and use in source and binary forms, with or without
+* modification, are permitted provided that the following conditions are
+* met:
+*     * Redistributions of source code must retain the above copyright
+*       notice, this list of conditions and the following disclaimer.
+*     * Redistributions in binary form must reproduce the above
+*       copyright notice, this list of conditions and the following
+*       disclaimer in the documentation and/or other materials provided
+*       with the distribution.
+*     * Neither the name of The Linux Foundation nor the names of its
+*       contributors may be used to endorse or promote products derived
+*       from this software without specific prior written permission.
+*
+* THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+* WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+* ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+* BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+* CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+* SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+* BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+* WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+* OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+* IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*
+*/
+
+package vendor.qti.hardware.wifi.hostapd@1.2;
+
+import android.hardware.wifi.hostapd@1.0::IHostapd;
+import android.hardware.wifi.hostapd@1.0::types;
+import android.hardware.wifi.hostapd@1.2::IHostapd;
+
+import @1.0::IHostapdVendor;
+import @1.1::IHostapdVendor;
+
+/**
+ * Vendor Interface exposed by the hostapd HIDL service registered
+ * with the hardware service manager.
+ * This is the root level object for any vendor specific hostapd interactions.
+ */
+interface IHostapdVendor extends @1.1::IHostapdVendor {
+    /** Possble Security types. */
+    enum VendorEncryptionType : @1.1::IHostapdVendor.VendorEncryptionType {
+        SAE_TRANSITION,
+    };
+
+
+    /**
+     * Parameters to use for setting up the access point interface.
+     */
+    struct VendorIfaceParams {
+        /**
+         * Baseline information as defined in HAL 1.1.
+         */
+        @1.1::IHostapdVendor.VendorIfaceParams VendorV1_1;
+
+        /**
+         * Additional Channel params for the interface from 1.2::IHostapd HAL
+         */
+        @1.2::IHostapd.ChannelParams channelParams;
+
+        /**
+         * Additional Hw mode params for the interface from 1.2::IHostapd HAL
+         */
+        @1.2::IHostapd.HwModeParams hwModeParams;
+    };
+
+    /**
+     * Parameters to use for setting up the access point network.
+     */
+    struct VendorNetworkParams {
+        /**
+         * Baseline information as defined in HAL 1.2::IHostapd.
+         */
+        @1.2::IHostapd.NetworkParams V1_2;
+
+        /**
+         * Key management mask for the network. overrides NetworkParams.encryptionType
+         */
+        VendorEncryptionType vendorEncryptionType;
+    };
+
+
+    /**
+     * Adds a new vendor access point for hostapd to control.
+     *
+     * This should trigger the setup of an access point with the specified
+     * interface and network params.
+     *
+     * @param ifaceParams AccessPoint Params for the access point.
+     * @param nwParams Network Params for the access point.
+     * @return status Status of the operation.
+     *         Possible status codes:
+     *         |HostapdStatusCode.SUCCESS|,
+     *         |HostapdStatusCode.FAILURE_ARGS_INVALID|,
+     *         |HostapdStatusCode.FAILURE_UNKNOWN|,
+     *         |HostapdStatusCode.FAILURE_IFACE_EXISTS|
+     */
+    addVendorAccessPoint_1_2(VendorIfaceParams ifaceParams, VendorNetworkParams nwParams)
+        generates (HostapdStatus status);
+};
