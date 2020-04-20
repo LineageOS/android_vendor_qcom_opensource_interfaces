@@ -214,4 +214,25 @@ interface IHostapdVendor extends @1.1::IHostapdVendor {
      */
     addVendorAccessPoint_1_2(VendorIfaceParams ifaceParams, VendorNetworkParams nwParams)
         generates (HostapdStatus status);
+
+    /**
+     * List active interfaces in hostapd.
+     *
+     * @return status Status of the operation.
+     *         Possible status codes:
+     *         |SupplicantStatusCode.SUCCESS|,
+     *         |SupplicantStatusCode.FAILURE_UNKNOWN|
+     * @return ifnames Active interface names.
+     */
+    listInterfaces() generates (HostapdStatus status, vec<string> ifnames);
+
+    /**
+     * Send hostapd_cli like commands to hostapd.
+     * @return status Status of the operation.
+     *         Possible status codes:
+     *         |SupplicantStatusCode.SUCCESS|,
+     *         |SupplicantStatusCode.FAILURE_UNKNOWN|
+     * @return reply Hostapd_cli like reply string
+     */
+    hostapdCmd(string ifname, string cmd) generates (HostapdStatus status, string reply);
 };
