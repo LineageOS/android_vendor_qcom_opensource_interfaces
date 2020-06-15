@@ -69,3 +69,5 @@ ada1c82f1ba85c9f403c4b91d24ebc6dfc2e796a7727bcca23f4e2ea68800f35 vendor.display.
 #HAL released in Android R
 7f8c47a47524e1ac21646578c7545fffdc08cec60df37d28ce8796b6461ef0c2 vendor.qti.hardware.display.composer@3.0::IQtiComposer
 f724000c84dd66ffaea8b3edc610f13381a62513854e35d89b3f4a4daad620d0 vendor.qti.hardware.display.composer@3.0::IQtiComposerClient
+c85fce19541fb31c8ce4927166a4b50da1e5d50a98594bcaae2f8b2eec12fb7d vendor.qti.hardware.display.allocator@4.0::IQtiAllocator
+f49205d41f011a96c6d238ea69f7b6c9d159809f4ecabef04ca4ccdb195d57b5 vendor.qti.hardware.display.mapper@4.0::IQtiMapper
