@@ -1,4 +1,4 @@
-#Copyright (c) 2019, The Linux Foundation. All rights reserved.
+#Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
 
 #Redistribution and use in source and binary forms, with or without
 #modification, are permitted provided that the following conditions are
@@ -31,3 +31,7 @@
 129c97e20ef36e8ac4ec9b2b8a2083849bc5932a62e434af2eb977f1ab8594db vendor.qti.hardware.camera.postproc@1.0::IPostProcServiceCallBacks
 df8ddeff86819bb9775c2d1ee4c6d3adb55f1c9c9964d730f99d37136b0a2f5d vendor.qti.hardware.camera.postproc@1.0::IPostProcSession
 
+# AON HIDL interface
+6a1d895a7a30c53a5b52f9588538966d4f9a5127efd54479675ba36a0fd4bae4 vendor.qti.hardware.camera.aon@1.0::types
+162887982638bfa8a39e1dd56317afc6923d72e27e8b8d40fc0bc95728162ab0 vendor.qti.hardware.camera.aon@1.0::IAONService
+7afc58617fa3cd6ec9baa139c197e975fae827a9c5dd4919ee53395d40f3a03a vendor.qti.hardware.camera.aon@1.0::IAONServiceCallBack
