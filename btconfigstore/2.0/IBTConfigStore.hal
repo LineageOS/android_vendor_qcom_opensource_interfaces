@@ -1,0 +1,6 @@
+package vendor.qti.hardware.btconfigstore@2.0;
+
+interface IBTConfigStore {
+    getControllerAddOnFeatures() generates (Result result, ControllerAddOnFeaturesList featuresList);
+    getHostAddOnFeatures() generates (Result result, HostAddOnFeaturesList featuresList);
+};
