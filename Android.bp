@@ -18,6 +18,11 @@ hidl_package_root {
 }
 
 hidl_package_root {
+    name: "vendor.qti.hardware.capabilityconfigstore",
+    path: "vendor/qcom/opensource/interfaces/capabilityconfigstore",
+}
+
+hidl_package_root {
     name: "vendor.qti.hardware.cryptfshw",
     path: "vendor/qcom/opensource/interfaces/cryptfshw",
 }
