@@ -1,0 +1,2 @@
+faf87f55d46380fd878be124952f57143643c8df0bbbfc69575b9b01c1555dd2  vendor.qti.hardware.audiohalext@1.0::types
+aa3d7a17f2ee914fa11ae0fab3c366e4c71194635c4e2660ab27112e105acb67  vendor.qti.hardware.audiohalext@1.0::IAudioHalExt
