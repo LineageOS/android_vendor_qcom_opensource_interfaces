@@ -1,0 +1,6 @@
+package vendor.qti.hardware.audiohalext@1.0;
+
+interface IAudioHalExt {
+    getApmConfigs() generates(ApmConfigs value);
+    getAVConfigs() generates(AVConfigs value);
+};
