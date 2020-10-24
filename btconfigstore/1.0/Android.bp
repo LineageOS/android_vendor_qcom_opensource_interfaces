@@ -3,7 +3,7 @@
 hidl_interface {
     name: "vendor.qti.hardware.btconfigstore@1.0",
     root: "vendor.qti.hardware.btconfigstore",
-    product_specific: true,
+    system_ext_specific: true,
     srcs: [
         "types.hal",
         "IBTConfigStore.hal",
@@ -13,4 +13,3 @@ hidl_interface {
     ],
     gen_java: true,
 }
-
