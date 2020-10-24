@@ -3,7 +3,7 @@
 hidl_interface {
     name: "com.qualcomm.qti.bluetooth_audio@1.0",
     root: "com.qualcomm.qti.bluetooth_audio",
-    product_specific: true,
+    system_ext_specific: true,
     srcs: [
         "types.hal",
         "IBluetoothAudio.hal",
@@ -14,4 +14,3 @@ hidl_interface {
     ],
     gen_java: true,
 }
-

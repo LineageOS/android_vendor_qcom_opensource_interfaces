@@ -3,7 +3,7 @@
 hidl_interface {
     name: "vendor.qti.hardware.cryptfshw@1.0",
     root: "vendor.qti.hardware.cryptfshw",
-    product_specific: true,
+    system_ext_specific: true,
     srcs: [
         "ICryptfsHw.hal",
     ],
@@ -12,4 +12,3 @@ hidl_interface {
     ],
     gen_java: true,
 }
-
