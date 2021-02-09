@@ -16,6 +16,24 @@
       "revId": "a7d6842af8215e7c488cfe9e5ff2d0b8ea842874",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a4bff468_16e0e3b1",
+        "filename": "perf/1.0/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-02-09T14:54:48Z",
+      "side": 1,
+      "message": "Just building vendor.qti.hardware.perf@1.0.vendor will do it. I tested that on gts4lv which needs vendor.qti.hardware.perf@2.0 in vendor partition.",
+      "parentUuid": "01214587_72971d81",
+      "revId": "a7d6842af8215e7c488cfe9e5ff2d0b8ea842874",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
