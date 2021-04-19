@@ -72,3 +72,4 @@ f724000c84dd66ffaea8b3edc610f13381a62513854e35d89b3f4a4daad620d0 vendor.qti.hard
 c85fce19541fb31c8ce4927166a4b50da1e5d50a98594bcaae2f8b2eec12fb7d vendor.qti.hardware.display.allocator@4.0::IQtiAllocator
 f49205d41f011a96c6d238ea69f7b6c9d159809f4ecabef04ca4ccdb195d57b5 vendor.qti.hardware.display.mapper@4.0::IQtiMapper
 fa035077927f2dff68d2b1ad6e6379822d29364999aa3fd70c5d2ffe93707d9b vendor.qti.hardware.display.demura@1.0::IDemuraFileFinder
+550322847ebc31fd2c13a34aefa1f75df1c879cb423422831d5a5f35ba77aca4 vendor.qti.hardware.display.demura@2.0::IDemuraFileFinder
