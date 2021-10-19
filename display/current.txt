@@ -66,6 +66,7 @@ be4de6eea1098375e80d26bd86d0e239a3d739ec7dfa43b1b2fa5e6f75c86966 vendor.display.
 14fcf170f04a9878bf085b2aa4d75ef5e3d241926bef18e58d6d254e000ff689 vendor.display.config@2.0::IDisplayConfigCallback
 ada1c82f1ba85c9f403c4b91d24ebc6dfc2e796a7727bcca23f4e2ea68800f35 vendor.display.config@1.16::IDisplayConfig
 f0e4b206e3357cff0399f4a696dd57bb385d68d2c13865ea7bb5180eca06cd61 vendor.display.config@1.17::IDisplayConfig
+9c7bd67f95c98f95c0c97a80e7ab1d79cbe298a42cb6bcd2e915f749c30552b6 vendor.display.config@1.18::IDisplayConfig
 
 #HAL released in Android R
 7f8c47a47524e1ac21646578c7545fffdc08cec60df37d28ce8796b6461ef0c2 vendor.qti.hardware.display.composer@3.0::IQtiComposer
