@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8af8a78e_8a9fd048",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13559
+      },
+      "writtenOn": "2021-11-15T07:32:40Z",
+      "side": 1,
+      "message": "\u003e Patch Set 4:\n\u003e \n\u003e It appears CAF dropped this, https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio/commit/?h\u003dLA.UM.9.12.r1-09500-SMxx50.0\u0026id\u003debda8eef02d5636e6c8964b0f5b71a30cbef715d\n\nthis is still useful on devices using prebuilt vendor",
+      "revId": "45754da35c7fef7dc79e47f95462231ea928ab39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
