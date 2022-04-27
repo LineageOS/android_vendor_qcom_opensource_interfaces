@@ -25,6 +25,40 @@
 #OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 #IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+#Changes from Qualcomm Innovation Center are provided under the following license:
+
+#Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+
+#Redistribution and use in source and binary forms, with or without
+#modification, are permitted (subject to the limitations in the
+#disclaimer below) provided that the following conditions are met:
+
+#    * Redistributions of source code must retain the above copyright
+#      notice, this list of conditions and the following disclaimer.
+
+#    * Redistributions in binary form must reproduce the above
+#      copyright notice, this list of conditions and the following
+#      disclaimer in the documentation and/or other materials provided
+#      with the distribution.
+
+#    * Neither the name of Qualcomm Innovation Center, Inc. nor the names of its
+#      contributors may be used to endorse or promote products derived
+#      from this software without specific prior written permission.
+
+#NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE
+#GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT
+#HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
+#WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+#MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+#IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+#ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+#DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+#GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+#INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+#IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+#OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+#IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
+
 #HAL released in Android O
 0f53273ad37cc730b1fb4ea953fa0697ec0cc529b5b5a0a960aa5b276cea8143 vendor.display.config@1.0::IDisplayConfig
 
@@ -68,6 +102,7 @@ ada1c82f1ba85c9f403c4b91d24ebc6dfc2e796a7727bcca23f4e2ea68800f35 vendor.display.
 f0e4b206e3357cff0399f4a696dd57bb385d68d2c13865ea7bb5180eca06cd61 vendor.display.config@1.17::IDisplayConfig
 9c7bd67f95c98f95c0c97a80e7ab1d79cbe298a42cb6bcd2e915f749c30552b6 vendor.display.config@1.18::IDisplayConfig
 cbc4f4bf866904bb4b57d32efff12666c60d2cf8306ffb7ceb81c45fca65a23e vendor.display.config@1.19::IDisplayConfig
+294d1a6f3e517fd676c320995db12fcdd895e7588d9f28449f126d0bc3be3408 vendor.display.config@1.20::IDisplayConfig
 
 #HAL released in Android R
 7f8c47a47524e1ac21646578c7545fffdc08cec60df37d28ce8796b6461ef0c2 vendor.qti.hardware.display.composer@3.0::IQtiComposer
