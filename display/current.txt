@@ -113,6 +113,11 @@ f49205d41f011a96c6d238ea69f7b6c9d159809f4ecabef04ca4ccdb195d57b5 vendor.qti.hard
 fa035077927f2dff68d2b1ad6e6379822d29364999aa3fd70c5d2ffe93707d9b vendor.qti.hardware.display.demura@1.0::IDemuraFileFinder
 e609d77b00158060ca222ccd13e0ba8019a42336e3b6a6a32c6396f7b7ea2077 vendor.qti.hardware.display.composer@3.1::IQtiComposer
 ee6870d17e33bf8e2365165637b75559ceffda57770b1a35f3a9a8bbf3769266 vendor.qti.hardware.display.composer@3.1::IQtiComposerClient
+dcd4f8ce2125de8f3e4f7fb790bc10b39c0b1eeabc464e89acda557d9003c0ee vendor.qti.hardware.display.composer@3.2::IQtiComposer
+cf55579bd148bc2dc71274109cfed27bd378020e9fe2444500d6691a01bdf537 vendor.qti.hardware.display.composer@3.2::IQtiComposerClient
+
+
+
 550322847ebc31fd2c13a34aefa1f75df1c879cb423422831d5a5f35ba77aca4 vendor.qti.hardware.display.demura@2.0::IDemuraFileFinder
 
 #HAL released in Android T
