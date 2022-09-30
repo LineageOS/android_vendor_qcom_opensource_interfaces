@@ -47,3 +47,7 @@ afa7eb61656ef6806a373aaae88b664425e08e3f57bc9bae04f7b63acfa48c8d vendor.qti.hard
 54dd29871acf91ca52acdd3d95e92b4a9ec90a5d9af4ddea83f589d2613982c0 vendor.qti.hardware.camera.aon@1.3::types
 614adcae054e8f6486e0c1fbe9fc6502d210bdba646e3079f5b61ea130eeec1f vendor.qti.hardware.camera.aon@1.3::IAONService
 e07e6264400f6cfd226c7a95287c56a23f1deaaf07b51b8c4b605982760906ff vendor.qti.hardware.camera.aon@1.3::IAONServiceCallBack
+
+e0837fce33d8d9f3f4ba56f103bef9b72e82d65d008b0001a4f6f45ef760f461 vendor.qti.hardware.camera.aon@1.4::types
+0453e7525f949a3438caa19390b33def5034a559041c8cabe5b5915d869b8351 vendor.qti.hardware.camera.aon@1.4::IAONService
+4a45fc2603820d0e2e31f1554f1b1ac2d204c48ce7ee2ee0717a7b7f347e853b vendor.qti.hardware.camera.aon@1.4::IAONServiceCallBack
