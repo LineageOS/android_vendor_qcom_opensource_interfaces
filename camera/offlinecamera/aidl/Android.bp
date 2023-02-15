@@ -1,0 +1,28 @@
+aidl_interface {
+    name: "vendor.qti.hardware.camera.offlinecamera",
+    vendor_available: true,
+    owner: "qti",
+    srcs: [
+        "vendor/qti/hardware/camera/offlinecamera/*.aidl",
+    ],
+    imports: [
+        "android.hardware.camera.device",
+    ],
+    stability: "vintf",
+    backend: {
+        cpp: {
+            enabled: false,
+        },
+        java: {
+            sdk_version: "module_current",
+            enabled: false,
+        },
+    },
+    versions_with_info: [
+        {
+            version: "1",
+            imports: ["android.hardware.camera.device-V1"],
+        },
+    ],
+
+}
