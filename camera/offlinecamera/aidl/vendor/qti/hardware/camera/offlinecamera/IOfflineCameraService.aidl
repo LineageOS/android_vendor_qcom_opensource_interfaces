@@ -8,7 +8,7 @@ package vendor.qti.hardware.camera.offlinecamera;
 import vendor.qti.hardware.camera.offlinecamera.OpMode;
 import vendor.qti.hardware.camera.offlinecamera.IOfflineCameraCallback;
 import vendor.qti.hardware.camera.offlinecamera.IOfflineCameraSession;
-
+import android.hardware.camera.device.CameraMetadata;
 
 @VintfStability
 interface IOfflineCameraService {
@@ -75,4 +75,13 @@ interface IOfflineCameraService {
     */
     IOfflineCameraSession openOfflineSeesion(in String sessionName, in IOfflineCameraCallback callback);
 
+    /**
+    * GetOfflineStaticCaps:
+    *
+    * get camera capabilities.
+    *
+    * @return camera metadata
+    *
+    */
+    CameraMetadata GetOfflineStaticCaps();
 }
