@@ -1,13 +1,7 @@
 aidl_interface {
-    name: "vendor.qti.hardware.camera.offlinecamera",
+    name: "vendor.qti.hardware.debugutils_aidl",
     vendor_available: true,
-    owner: "qti",
-    srcs: [
-        "vendor/qti/hardware/camera/offlinecamera/*.aidl",
-    ],
-    imports: [
-        "android.hardware.camera.device-V2",
-    ],
+    srcs: ["vendor/qti/hardware/debugutils/*.aidl"],
     stability: "vintf",
     backend: {
         cpp: {
@@ -15,7 +9,6 @@ aidl_interface {
         },
         java: {
             sdk_version: "module_current",
-            enabled: false,
         },
         ndk: {
             enabled: true,
@@ -24,7 +17,7 @@ aidl_interface {
     versions_with_info: [
         {
             version: "1",
-            imports: ["android.hardware.camera.device-V2"],
+            imports: [],
         },
     ],
     frozen: true,
