@@ -21,4 +21,6 @@ enum OpMode {
     OFFLINEQLL           = 4,
 
     OFFLINERAW2RAW       = 5,
+
+    OFFLINERAW2JPEG      = 6,
 }

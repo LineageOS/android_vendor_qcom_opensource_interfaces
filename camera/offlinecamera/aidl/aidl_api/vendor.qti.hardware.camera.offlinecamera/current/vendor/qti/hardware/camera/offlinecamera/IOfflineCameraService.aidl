@@ -27,4 +27,5 @@ interface IOfflineCameraService {
   void registerClient(in int clientID, in vendor.qti.hardware.camera.offlinecamera.IOfflineCameraCallback callback);
   void unRegisterClient(in int clientID);
   vendor.qti.hardware.camera.offlinecamera.IOfflineCameraSession openOfflineSeesion(in String sessionName, in vendor.qti.hardware.camera.offlinecamera.IOfflineCameraCallback callback);
+  android.hardware.camera.device.CameraMetadata GetOfflineStaticCaps();
 }
