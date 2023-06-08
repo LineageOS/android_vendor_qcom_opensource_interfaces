@@ -17,7 +17,10 @@ parcelable OfflineSessionConfigureInfo {
 
     Stream[]         streams;
 
+    /*not used in V2*/
     OpMode           mode;
 
     CameraMetadata   configureSetting;
+
+    int              opModes;
 }
