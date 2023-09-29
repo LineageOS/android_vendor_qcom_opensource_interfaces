@@ -16,6 +16,23 @@
       "message": "I did something wrong here.",
       "revId": "7e41eeb480578966fd87d42f439aa0b4fb4188c9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "60c1583c_bbc069f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2023-09-29T06:57:00Z",
+      "side": 1,
+      "message": "Actually just had to do a clean build (while incremental has worked for the lineage change).\n\nTest passes now.",
+      "revId": "7e41eeb480578966fd87d42f439aa0b4fb4188c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
