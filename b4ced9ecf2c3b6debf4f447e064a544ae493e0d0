@@ -16,6 +16,24 @@
       "message": "Some old legeacy devices still need it",
       "revId": "b4ced9ecf2c3b6debf4f447e064a544ae493e0d0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dfde6e2d_ca6e5033",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-11-04T19:35:55Z",
+      "side": 1,
+      "message": "What devices and for what reason?",
+      "parentUuid": "1908051a_762842f5",
+      "revId": "b4ced9ecf2c3b6debf4f447e064a544ae493e0d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
