@@ -34,6 +34,24 @@
       "parentUuid": "1908051a_762842f5",
       "revId": "b4ced9ecf2c3b6debf4f447e064a544ae493e0d0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9b28012_3aca133c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33169
+      },
+      "writtenOn": "2023-11-04T20:05:22Z",
+      "side": 1,
+      "message": "device: Asus Zenfone Max Pro M1\n\nreason: the current official tree for los uses a different version of audio-hal and that is why this hal wasn\u0027t needed in it,\n\nbut the one I\u0027m creating/learning uses the stock audio-hal and requires this this patch,\n\nadded it as for my specific device it has alternatives, but other legacy devices might not have,\n\nig there is no harm in keeping it,",
+      "parentUuid": "dfde6e2d_ca6e5033",
+      "revId": "b4ced9ecf2c3b6debf4f447e064a544ae493e0d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
