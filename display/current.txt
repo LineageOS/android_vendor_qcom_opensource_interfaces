@@ -122,3 +122,6 @@ cf55579bd148bc2dc71274109cfed27bd378020e9fe2444500d6691a01bdf537 vendor.qti.hard
 
 #HAL released in Android T
 1e8de36267058910c4a1b4b0d92322640c5c24f961d1c9e05b5b033e65e8e0e6 vendor.qti.hardware.display.mapperextensions@1.3::IQtiMapperExtensions
+
+#HAL released in Android U
+dc0a735247d4e2363f7442cebc2e24caf69d67ff8ff8c202ec6f99e1c934e76c vendor.qti.hardware.display.mapperextensions@1.4::IQtiMapperExtensions
