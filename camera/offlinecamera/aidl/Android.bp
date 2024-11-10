@@ -26,7 +26,12 @@ aidl_interface {
             version: "1",
             imports: ["android.hardware.camera.device-V2"],
         },
+        {
+            version: "2",
+            imports: ["android.hardware.camera.device-V2"],
+        },
+
     ],
-    frozen: false,
+    frozen: true,
 
 }
