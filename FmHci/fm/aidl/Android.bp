@@ -1,0 +1,32 @@
+aidl_interface {
+    name: "vendor.qti.hardware.fm",
+    vendor_available: true,
+    owner: "qti",
+    srcs: [
+        "vendor/qti/hardware/fm/*.aidl",
+    ],
+    stability: "vintf",
+    backend: {
+        ndk: {
+            apex_available: [
+                "//apex_available:platform",
+                "com.android.bt",
+            ],
+            min_sdk_version: "31",
+        },
+        cpp: {
+            enabled: false,
+        },
+        java: {
+            sdk_version: "module_current",
+            enabled: false,
+        },
+    },
+    versions_with_info: [
+        {
+            version: "1",
+            imports: [],
+        },
+    ],
+    frozen: true,
+}
