@@ -1,0 +1,21 @@
+aidl_interface {
+    name: "vendor.qti.hardware.fm",
+    vendor_available: true,
+    owner: "qti",
+    srcs: [
+        "vendor/qti/hardware/fm/*.aidl",
+    ],
+    stability: "vintf",
+    backend: {
+        cpp: {
+            enabled: false,
+        },
+    },
+    frozen: true,
+    versions_with_info: [
+        {
+            version: "1",
+            imports: [],
+        },
+    ],
+}
