@@ -1,0 +1,16 @@
+package vendor.qti.hardware.fm@1.0;
+
+interface IFmHciCallbacks {
+    /**
+     * Invoked when the Bluetooth controller initialization has been
+     * completed.
+     */
+    initializationComplete(Status status);
+
+    /**
+     * This function is invoked when an HCI event is received from the
+     * Bluetooth controller to be forwarded to the Bluetooth stack.
+     * @param event is the HCI event to be sent to the Bluetooth stack.
+     */
+    hciEventReceived(HciPacket event);
+};
