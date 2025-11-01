@@ -2,7 +2,11 @@ package vendor.qti.hardware.btconfigstore@1.0;
 
 enum Result : int32_t {
     SUCCESS,
+    FAILED,
     UNKNOWN_ERROR,
+    INTERNAL_ERROR,
+    INVALID_ARGUMENTS,
+    NOT_SUPPORTED,
 };
 
 struct VendorProperty {
