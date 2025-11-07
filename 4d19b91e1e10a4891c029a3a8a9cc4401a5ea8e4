@@ -16,6 +16,29 @@
       "message": "Damn you even got the comments and the annotations right...",
       "revId": "4d19b91e1e10a4891c029a3a8a9cc4401a5ea8e4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "98bc1664_eb540a69",
+        "filename": "FmHci/fm/aidl/vendor/qti/hardware/fm/Status.aidl",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-11-07T13:57:54Z",
+      "side": 1,
+      "message": "this does not seem to match the hidl one in types.hal, are you sure that\u0027s correct?",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 2
+      },
+      "revId": "4d19b91e1e10a4891c029a3a8a9cc4401a5ea8e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
