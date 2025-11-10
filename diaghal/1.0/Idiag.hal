@@ -1,0 +1,15 @@
+/*
+ * SPDX-FileCopyrightText: 2025 The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+package vendor.qti.diaghal@1.0;
+
+import @1.0::Idiagcallback;
+
+interface Idiag {
+    open(Idiagcallback callback) generates (int32_t ret);
+    ioctl(uint32_t cmd, memory mem, uint32_t len) generates (int32_t ret);
+    write(memory mem, uint32_t len) generates (int32_t ret);
+    close() generates (int32_t ret);
+};

@@ -2,3 +2,7 @@
 164fac4d3e2ac29d8155b4ce661925c57191db787d94adfeb7eedb40bbb7fc63 vendor.qti.hardware.fm@1.0::IFmHciCallbacks.hal
 c76e496954f134097dd311b72ec852d0bf5468b5f8e3200ccb25469e5856e3b3 vendor.qti.hardware.fm@1.0::IFmHci.hal
 8627cd9d8a443474a7b55574184148bb4ffc3dc44b72fe1fcf753eeca6b122b6 vendor.qti.hardware.fm@1.0::types.hal
+
+# Qti diaghal
+e8479a272c4a0faebb6d6af6867f61206abfbc0e4ce1a2a52e21e9afdefbd63d vendor.qti.diaghal@1.0::Idiagcallback.hal
+badad817ae1f7965db4bfc610de0ed15d05cbc3b5327f3899210345b1a2ce87d vendor.qti.diaghal@1.0::Idiag.hal
