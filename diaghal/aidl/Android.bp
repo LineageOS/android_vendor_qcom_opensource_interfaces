@@ -1,0 +1,27 @@
+/*
+ * SPDX-FileCopyrightText: 2025 The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+aidl_interface {
+    name: "vendor.qti.diaghal",
+    vendor_available: true,
+    srcs: ["vendor/qti/diaghal/*.aidl"],
+    stability: "vintf",
+    imports: [
+        "android.hardware.common-V2",
+    ],
+    backend: {
+        java: {
+            sdk_version: "module_current",
+        },
+    },
+    frozen: true,
+    versions_with_info: [
+        {
+            version: "1",
+            imports: ["android.hardware.common-V2"],
+        },
+    ],
+
+}
