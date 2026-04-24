@@ -22,7 +22,9 @@
 
 package vendor.qti.hardware.camera.postproc;
 @VintfStability
-interface IPostProcServiceCallBacks {
-  void notifyResult(in vendor.qti.hardware.camera.postproc.Error error, in vendor.qti.hardware.camera.postproc.PostProcResult result);
-  void notifyRequestId(in vendor.qti.hardware.camera.postproc.Error error, in int reqId);
+parcelable ProcessRequestParams {
+  vendor.qti.hardware.camera.postproc.HandleParams[] input;
+  vendor.qti.hardware.camera.postproc.HandleParams[] output;
+  int streamId;
+  byte[] metadata;
 }

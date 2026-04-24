@@ -21,8 +21,17 @@
 // later when a module using the interface is updated, e.g., Mainline modules.
 
 package vendor.qti.hardware.camera.postproc;
-@VintfStability
-interface IPostProcServiceCallBacks {
-  void notifyResult(in vendor.qti.hardware.camera.postproc.Error error, in vendor.qti.hardware.camera.postproc.PostProcResult result);
-  void notifyRequestId(in vendor.qti.hardware.camera.postproc.Error error, in int reqId);
+@Backing(type="int") @VintfStability
+enum Error {
+  NONE = 0,
+  BAD_STREAMID = 1,
+  MAX_SESSIONS = 2,
+  INVALID_HANDLE = 3,
+  SESSION_NOT_INIT = 4,
+  MALLOC_FAIL = 5,
+  POSTPROC_FAIL = 6,
+  DEVICE_BAD_STATE = 7,
+  INVALID_CALLBACK_PTR = 8,
+  ABORT = 9,
+  UNSUPPORTED_RESOLUTION = 10,
 }

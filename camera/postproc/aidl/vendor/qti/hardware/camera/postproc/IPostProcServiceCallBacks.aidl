@@ -1,6 +1,6 @@
 /*
-/* Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
-/* SPDX-License-Identifier: BSD-3-Clause-Clear
+ * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
 */
 package vendor.qti.hardware.camera.postproc;
 
@@ -13,4 +13,5 @@ import vendor.qti.hardware.camera.postproc.PostProcResult;
 @VintfStability
 interface IPostProcServiceCallBacks {
     void notifyResult(in Error error, in PostProcResult result);
+    void notifyRequestId(in Error error, in int reqId);
 }
