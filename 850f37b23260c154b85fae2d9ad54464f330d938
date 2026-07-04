@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58269f0a_4fd9ff34",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-07-04T10:05:26Z",
+      "side": 1,
+      "message": "Can\u0027t use select() in import, this might break some ancient HALs",
+      "revId": "850f37b23260c154b85fae2d9ad54464f330d938",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
