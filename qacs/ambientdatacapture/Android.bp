@@ -8,7 +8,7 @@ aidl_interface {
     stability: "vintf",
     imports: [
         "android.hardware.common-V2",
-        "vendor.qti.hardware.display.config-V18",
+        "//vendor/qcom/opensource/commonsys-intf/display:vendor.qti.hardware.display.config-V18",
     ],
     backend: {
         java: {
@@ -25,7 +25,7 @@ aidl_interface {
             version: "1",
             imports: [
                 "android.hardware.common-V2",
-                "vendor.qti.hardware.display.config-V18",
+                "//vendor/qcom/opensource/commonsys-intf/display:vendor.qti.hardware.display.config-V18",
             ],
         },
 
