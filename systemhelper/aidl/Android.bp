@@ -17,6 +17,9 @@ aidl_interface {
             sdk_version: "module_current",
             enabled: false,
         },
+        rust: {
+            enabled: false,
+        },
         ndk: {
             enabled: true,
         },
@@ -26,6 +29,11 @@ aidl_interface {
             version: "1",
             imports: ["android.hardware.common-V2"],
         },
+        {
+            version: "2",
+            imports: ["android.hardware.common-V2"],
+        },
+
     ],
     frozen: true,
 

@@ -21,14 +21,12 @@
 // later when a module using the interface is updated, e.g., Mainline modules.
 
 package vendor.qti.hardware.systemhelperaidl;
-@Backing(type="long") @VintfStability
-enum SystemEventType {
-  PHONE_STATE_RINGING = 0x1,
-  PHONE_STATE_OFF_HOOK = 0x2,
-  PHONE_STATE_IDLE = 0x4,
-  ACTION_SCREEN_OFF = 0x8,
-  ACTION_SCREEN_ON = 0x10,
-  ACTION_SHUTDOWN = 0x20,
-  ACTION_USER_PRESENT = 0x40,
-  SYSTEM_EVENT_MAX = (0x80 - 1) /* 127 */,
+@VintfStability
+interface ISystemDisplayUtils {
+  void init();
+  vendor.qti.hardware.systemhelperaidl.OutDisplayConfig dequeueBuffer(out android.hardware.common.NativeHandle fd);
+  void enqueueBuffer();
+  void freeAllBuffers();
+  void cancelAllBuffers();
+  void releaseAllBuffers();
 }

@@ -1,11 +1,12 @@
 /*
- * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+ * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
  * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
 package vendor.qti.hardware.systemhelperaidl;
 
 import vendor.qti.hardware.systemhelperaidl.SystemResourceType;
+import vendor.qti.hardware.systemhelperaidl.ISystemDisplayUtils;
 import android.hardware.common.NativeHandle;
 
 @VintfStability
@@ -38,4 +39,13 @@ interface ISystemResource {
      * @param resourceId unique resource identifier to be released
      */
     void release(in int resourceId);
+
+    /**
+     * Acquire a system graphics surface object.
+     *
+     * @param width surface width
+     * @param height surface height
+     * @return displayUtil ISystemDisplayUtils aidl object
+     */
+    ISystemDisplayUtils acquireSurface2(in int width, in int height);
 }
