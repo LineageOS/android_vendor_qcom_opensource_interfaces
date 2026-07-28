@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65fd1562_15b81c92",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-07-28T06:33:25Z",
+      "side": 1,
+      "message": "Fixes build errors while building MTK, somehow never popped up while building sm8250",
+      "revId": "9bf44354c9c660664bda243edd4af85644a5e36a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
