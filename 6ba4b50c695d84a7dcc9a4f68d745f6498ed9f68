@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8365c3cd_8a8cfd58",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-07-28T11:00:20Z",
+      "side": 1,
+      "message": "Verified by building Tetris and obiwan that the error doesn\u0027t pop up anymore",
+      "revId": "6ba4b50c695d84a7dcc9a4f68d745f6498ed9f68",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
