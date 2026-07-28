@@ -33,6 +33,23 @@
       "message": "https://review.lineageos.org/q/topic:ambientdatacapture-ns let\u0027s do that instead?",
       "revId": "9bf44354c9c660664bda243edd4af85644a5e36a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "83cc785b_6d92aef4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-07-28T11:01:00Z",
+      "side": 1,
+      "message": "Not required after luk\u0027s changes",
+      "revId": "9bf44354c9c660664bda243edd4af85644a5e36a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
