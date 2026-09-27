@@ -6,7 +6,7 @@ aidl_interface {
         "vendor/qti/hardware/camera/offlinecamera/*.aidl",
     ],
     imports: [
-        "android.hardware.camera.device-V3",
+        "android.hardware.camera.device-V4",
     ],
     stability: "vintf",
     backend: {
@@ -33,6 +33,10 @@ aidl_interface {
         {
             version: "3",
             imports: ["android.hardware.camera.device-V3"],
+        },
+        {
+            version: "4",
+            imports: ["android.hardware.camera.device-V4"],
         },
 
     ],
